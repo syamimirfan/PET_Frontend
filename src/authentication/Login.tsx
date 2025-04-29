@@ -9,7 +9,9 @@ import {
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+type Props = object;
+
+const Login: React.FC<Props> = ()  => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 

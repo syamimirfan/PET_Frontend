@@ -10,7 +10,9 @@ import {
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
-const Register = () => {
+type Props = object;
+
+const Register: React.FC<Props> = ()  => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
